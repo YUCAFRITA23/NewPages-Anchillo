@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Álbum de Recuerdos Multimedia - Galería de fotos, música y momentos especiales. Examen Parcial.">
+    <meta name="author" content="Piero Anchillo">
+    <title>Álbum de Recuerdos</title>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="bg-dark text-white">
+
+    <audio id="musicaFondo" src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=lofi-study-112191.mp3" loop></audio>
+
+   
+    <header class="hero-header bg-dark text-white py-5 position-relative border-bottom border-secondary">
+        <div class="container position-relative z-1">
+            <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+                <a class="navbar-brand fw-bold fs-3 text-info" href="#">
+                    <i class="fa-solid fa-compact-disc me-2"></i>RECUERDOS
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#recuerdos">Fotos</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#playlist">Playlist</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#momentos">Videos</a></li>
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                            <span id="status-audio" class="badge bg-secondary text-wrap py-2 px-3">🔇 Audio en espera</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="text-center py-5">
+                <h1 class="fw-bold display-4 mb-3 text-white">Álbum de Recuerdos Digital</h1>
+                <p class="lead mb-4 fs-4 text-white-50">Colección de fotografías, música y momentos guardados.</p>
+                <a href="#recuerdos" class="btn btn-info btn-lg fw-bold px-4 shadow text-dark">Explorar Recuerdos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="recuerdos" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-2 fw-bold display-6">Fotografías del Recuerdo</h2>
+                <p class="text-center text-white-50 mb-5 fs-5">Momentos especiales e inolvidables</p>
+                
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card text-center h-100 border-0 shadow-sm bg-secondary bg-opacity-25 text-white overflow-hidden tarjeta-custom">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500" class="card-img-top" alt="Atardecer Costa" style="height: 180px; object-fit: cover;">
+                            <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="badge bg-danger mb-2">PASEOS</span>
+                                    <h5 class="card-title text-info fw-bold fs-5 mb-2">Atardeceres</h5>
+                                    <p class="card-text text-white-50 small">Viaje improvisado para ver caer el sol sin prisa alguna.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card text-center h-100 border-0 shadow-sm bg-secondary bg-opacity-25 text-white overflow-hidden tarjeta-custom">
+                            <img src="https://st4.depositphotos.com/2931363/21560/i/450/depositphotos_215604572-stock-photo-friends-casual-wear-smiling-while.jpg" class="card-img-top" alt="Noche de Amigos" style="height: 180px; object-fit: cover;">
+                            <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="badge bg-danger mb-2">NOCHE</span>
+                                    <h5 class="card-title text-info fw-bold fs-5 mb-2">Noche con Amigos</h5>
+                                    <p class="card-text text-white-50 small">Madrugada de fin de semana escuchando buena música.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card text-center h-100 border-0 shadow-sm bg-secondary bg-opacity-25 text-white overflow-hidden tarjeta-custom">
+                            <img src="https://cdn.pixabay.com/photo/2013/10/07/19/33/walk-192223_1280.jpg" class="card-img-top" alt="Festival Verano" style="height: 180px; object-fit: cover;">
+                            <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="badge bg-danger mb-2">MÚSICA</span>
+                                    <h5 class="card-title text-info fw-bold fs-5 mb-2">PLAN PARA ESCUCHAR MÚSICA</h5>
+                                    <p class="card-text text-white-50 small">El escenario retumbando durante todo el concierto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card text-center h-100 border-0 shadow-sm bg-secondary bg-opacity-25 text-white overflow-hidden tarjeta-custom">
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500" class="card-img-top" alt="Ruta Desconocida" style="height: 180px; object-fit: cover;">
+                            <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <span class="badge bg-danger mb-2">VIAJES</span>
+                                    <h5 class="card-title text-info fw-bold fs-5 mb-2">Ruta Desconocida</h5>
+                                    <p class="card-text text-white-50 small">Manejando sin rumbo claro, disfrutando del paisaje.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="playlist" class="py-5 bg-secondary bg-opacity-10">
+            <div class="container py-3">
+                <h2 class="text-center mb-2 fw-bold display-6">Playlist Favorita</h2>
+                <p class="text-center text-white-50 mb-5 fs-5">La banda sonora de estos momentos</p>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <div class="p-4 border border-secondary rounded bg-dark shadow-sm h-100">
+                            <h4 class="fw-bold text-info fs-5 mb-1">Música Acústica</h4>
+                            <p class="text-white-50 small mb-3">Milo J</p>
+                            <audio controls class="w-100">
+                                <source src="MUSICA/J.mp3" type="audio/ogg">
+                                Tu navegador no soporta audio.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="p-4 border border-secondary rounded bg-dark shadow-sm h-100">
+                            <h4 class="fw-bold text-info fs-5 mb-1">Piano Clásico</h4>
+                            <p class="text-white-50 small mb-3">Just the two us</p>
+                            <audio controls class="w-100">
+                                <source src="MUSICA/xdd.mp3" type="audio/ogg">
+                                Tu navegador no soporta audio.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="momentos" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-2 fw-bold display-6">Momentos en Video</h2>
+                <p class="text-center text-white-50 mb-5 fs-5">Anécdotas y grabaciones del recuerdo</p>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <div class="card border-0 bg-secondary bg-opacity-25 text-white p-3 rounded-3 h-100">
+                            <h5 class="fw-bold text-info fs-5 mb-1">Noche de Campamento</h5>
+                            <p class="fst-italic text-white-50 small mb-3">"Esa noche de campamento viendo las estrellas."</p>
+                            <div class="ratio ratio-16x9">
+                                <iframe src="VIDEOS/dxx.mp4" title="Video de campamento junto a la fogata" allowfullscreen class="rounded"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card border-0 bg-secondary bg-opacity-25 text-white p-3 rounded-3 h-100">
+                            <h5 class="fw-bold text-info fs-5 mb-1">En Ruta mirando el paisaje</h5>
+                            <p class="fst-italic text-white-50 small mb-3">"El mejor viaje es mirando por la ventana."</p>
+                            <div class="ratio ratio-16x9">
+                                <iframe src="VIDEOS/xddd.mp4" title="Video de viaje en bus mirando el paisaje" allowfullscreen class="rounded"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 text-center border-top border-secondary">
+        <div class="container">
+            <p class="mb-1 fs-5"><strong>Álbum de Recuerdos</strong> | Piero Anchillo</p>
+            <p class="small mb-0 text-white-50">Curso: Diseño Web | Examen Parcial </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('click', function () {
+            const audio = document.getElementById("musicaFondo");
+            const statusLabel = document.getElementById("status-audio");
+
+            if (audio.paused) {
+                audio.volume = 0.3;
+                audio.play().then(() => {
+                    statusLabel.innerHTML = "🎵 Reproduciendo ambiental";
+                    statusLabel.className = "badge bg-info text-dark text-wrap py-2 px-3";
+                }).catch(err => console.log(err));
+            }
+        }, { once: true });
+    </script>
+</body>
+</html>
